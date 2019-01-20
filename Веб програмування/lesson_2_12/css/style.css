@@ -1,0 +1,92 @@
+body{
+    margin: 0px;
+}
+.arrow{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+.header{
+    height: 100vh;
+    background-color: aquamarine;
+}
+.main{
+    height: 100vh;
+    background-color: aqua;
+}
+.footer{
+    height: 100vh;    
+    background-color: rgb(0, 192, 192);
+}
+nav{
+    padding-top:100px;
+    width: 250px;
+    height: 200px;
+}
+nav ul{
+    margin: 0px;
+    padding: 0px;
+}
+.menu{
+    background-color: rgba(0, 0, 0, 30%);
+    list-style: none;
+}
+.menu li a{
+    text-decoration-line: none;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+.up{
+    margin-bottom: 57px; 
+    text-align: center;
+    font-size: 70px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(223, 223, 223, 70%);
+    height: 80px;
+    width: 80px;
+}
+.up a{
+    text-decoration: none;  
+}
+header{
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    background-color: blueviolet;
+}
+header h1{
+    margin: auto;
+    margin: 0px;
+    color: white;
+    font-size: 50px;
+}
+footer{
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: blueviolet;
+}
+.footer{
+    text-align: center;
+}
+.footer ul{
+    font-size: 50px;
+    color: wheat;
+    z-index: 1;
+    position: absolute;
+    right: 900px;
+}
+.footer img{
+    width: 700px;
+    height: auto;
+}
+footer h1{
+    margin: 0px;
+    color: white;
+    font-size: 50px;
+}

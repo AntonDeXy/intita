@@ -1,0 +1,17 @@
+body{
+    background-image: url("https://im0-tub-ua.yandex.net/i?id=94766e58f880fabf28b5c4f86574de6e&n=13");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+table{
+    text-align: center;
+    background-color: darkseagreen;
+}
+img{
+    width: 200px;
+    height: auto;
+}

@@ -1,0 +1,10 @@
+.hor1{
+	width: calc(100h / 3);
+	background-color: white;
+}
+.hor2{
+	background-color: black;
+}
+.hor3{
+	background-color: white;
+}
