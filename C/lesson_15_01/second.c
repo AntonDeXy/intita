@@ -11,7 +11,7 @@ main(){
 	
 	if (a==0 && b==0){
 		printf("zero");
-		return 0;
+		return;
 	}
 	
 	switch(a){
@@ -53,8 +53,6 @@ main(){
 		case 9: printf("nine");break;
 	}
 	}
-	
-	
 }
 
 
