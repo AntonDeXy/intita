@@ -1,26 +1,62 @@
 #include <stdio.h>
 
 void task1();
-//void task2();
+void task2();
 void task3();
 void task4();
 void task5();
 void task6();
 void task7();
+void task8();
+void task9();
+void task10();
+void task11();
+void task12();
+void task13();
+void task14();
+void task15();
+void task16();
+void task17();
 void task18();
+void task19();
+void task20();
+void task21();
+void task22();
+void task23();
+void task24();
 
 main(){
-
-//	task1();
-//	task3();	
-//	task4();
-	task5();
-	task6();
-//	task7();
-	task8();
-	task9();
-	task10();
-//		task18();
+	int tnum;
+	printf("Task num = ");
+	scanf("%i",&tnum);
+	switch (tnum)
+	{
+		case 1:task1();break;
+		case 2:task2();break;
+		case 3:task3();break;
+		case 4:task4();break;
+		case 5:task5();break;
+		case 6:task6();break;
+		case 7:task7();break;
+		case 8:task8();break;
+		case 9:task9();break;
+		case 10:task10();break;
+		case 11:task11();break;
+		case 12:task12();break;
+		case 13:task13();break;
+		case 14:task14();break;
+		case 15:task15();break;
+		case 16:task16();break;
+		case 17:task17();break;
+		case 18:task18();break;
+		// case 19:task19();break;
+		case 20:task20();break;
+		case 21:task21();break;
+		case 22:task22();break;
+		// case 23:task23();break;
+		// case 24:task24();break;
+		default:printf("This task not found");break;
+	}
 }
 
 task1(){
@@ -32,6 +68,23 @@ task1(){
 		if(a!=b){
 			c=num/100;
 			if(a!=c && b!=c){
+				printf("%i ",num);
+				count++;
+			}
+		}
+	}
+	printf("\ncount = %i",count);	
+}
+
+task2(){
+	int count=0,num,a,b,c;
+
+	for(num=100;num<=999;num++){
+		a=num%10;
+		b=(num/10)%10;
+		if(a!=b){
+			c=num/100;
+			if(a==c || a==b || b==c){
 				printf("%i ",num);
 				count++;
 			}
@@ -133,8 +186,27 @@ task7(){
 		c=c+1;
 	}
 	printf("\nsumma=%i",sum);
-	
-//	printf("%i+%i=%i",a,a2,a+a2);
+}
+
+task8(){
+	int n1,n2,c,num=0;
+	printf("Number= ");
+	scanf("%i",&n1);
+	printf("Second number= ");
+	scanf("%i",&n2);
+
+	if(n1>n2){
+		c=n1;
+		n1=n2;
+		n2=c;
+	}
+
+	while(num<=n2){
+		if(n1%n2!=0 && n1%5==0 && n2%5==0){
+			printf("%i",num);
+		}
+		num++;
+	}
 }
 
 task9(){
@@ -143,8 +215,8 @@ task9(){
 	scanf("%i",&a);
 	while(b<a){
 		if(b%2!=0){
-			c=квадратb;
-			sum=sum+c
+			c=b;
+			sum=sum+c;
 		}
 		b++;
 	}
@@ -211,41 +283,41 @@ task12(){
 }
 
 task13(){
-	int a,b,t;
+	int k,n,t;
 	
 	printf("Number= ");
 	scanf("%i",&k);
 	printf("Second number= ");
 	scanf("%i",&n);
-	t=a;
-	while(t<=b){
-		printf("%i",y);
+	t=k;
+	while(t<=n){
+		printf("%i",t);
 		t++;
 	}		
 }
 
 task14(){
-	int a,b,t;
+	int k,n,t;
 	
 	printf("Number= ");
 	scanf("%i",&k);
 	printf("Second number= ");
 	scanf("%i",&n);
-	t=b;
-	while(t>=a){
-		printf("%i",y);
+	t=n;
+	while(t>=k){
+		printf("%i",t);
 		t--;
 	}		
 }
 
 task15(){
-	int a,b,t,sum;
+	int k,n,t,sum;
 	
 	printf("Number= ");
 	scanf("%i",&k);
 	printf("Second number= ");
 	scanf("%i",&n);
-	while(t<=b){
+	while(t<=n){
 		sum=sum+t;
 		t++;
 	}
@@ -253,13 +325,13 @@ task15(){
 }
 
 task16(){
-	int a,b,t,sum;
+	int k,n,t,sum;
 	
 	printf("Number= ");
 	scanf("%i",&k);
 	printf("Second number= ");
 	scanf("%i",&n);
-	while(t<=b){
+	while(t<=n){
 		sum=sum*t;
 		t++;
 	}	
@@ -268,13 +340,13 @@ task16(){
 
 
 task17(){
-	int a,b,t,sum,kv;
+	int k,n,t,sum,kv;
 	
 	printf("Number= ");
 	scanf("%i",&k);
 	printf("Second number= ");
 	scanf("%i",&n);
-	while(t<=b){
+	while(t<=n){
 		kv=t*t;
 		sum=sum+kv;
 		t++;
@@ -315,9 +387,23 @@ task21(){
 	while(t<n){
 		sq=pow(a,t);
 		printf("%i v stepini %i = %i\n",a,t,sq);
-		t++
+		t++;
 	}
-	
+}
+
+task22(){
+	int a,n,sq,t=1,sum=0;
+	printf("Number= ");
+	scanf("%i",&a);
+	printf("Stepin= ");
+	scanf("%i",&n);
+	while(t<n){
+		sq=pow(a, t);
+		sum=sum+sq;
+		// printf("%i v stepini %i = %i\n",a,t,sq);
+		t++;
+	}
+	printf("Sum = %i",sum);
 }
 
 
