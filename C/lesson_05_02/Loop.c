@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 void task1();
 void task2();
@@ -398,7 +399,7 @@ task22(){
 	printf("Stepin= ");
 	scanf("%i",&n);
 	while(t<n){
-		sq=pow(a, t);
+		sq = pow (a, t);
 		sum=sum+sq;
 		// printf("%i v stepini %i = %i\n",a,t,sq);
 		t++;
