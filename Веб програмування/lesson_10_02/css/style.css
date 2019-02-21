@@ -1,35 +1,5 @@
-.first{
-  width: 150px;
-  z-index: 1;
-  background-color: rgb(248, 255, 145);
-  border: 1px solid;
-}
-.second{
-  position: absolute;
-  top: 80px;
-  left: 80px;
-  width: 150px;
-  z-index: 2;
-  background-color: yellow;
-  border: 1px solid;
-}
-body{
-  /* background-image: url('https://img.fonwall.ru/o/kp/parig-eyfeleva-bashnya-rechka.jpg'); */ */
-  background-repeat: no-repeat;
-}
-img{
-  width: 324px;
-  height: 231px;
-}
-.img{
-  display: block;
-  background-repeat: no-repeat;
-  width: 324px;
-  height: 231px;
-  /* background-image: url("https://i.ytimg.com/vi/3W_fmQ9EGp8/maxresdefault.jpg"); */
-  background-size: cover;
-}
-/* div{
+
+div{
   border-radius: 5px; 
   background-color: grey;
 }
@@ -67,4 +37,4 @@ h2{
   background-color: rgb(17, 187, 17);
   padding: 2px;
   color: white;
-} */
+} 

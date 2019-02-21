@@ -14,9 +14,12 @@ main(){
 //	task1();
 //	task3();	
 //	task4();
+	task5();
+	task6();
 //	task7();
-		task5();
-		task6();
+	task8();
+	task9();
+	task10();
 //		task18();
 }
 
