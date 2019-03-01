@@ -27,37 +27,37 @@ void task23();
 void task24();
 
 main(){
-	int tnum;
-	printf("Task num = ");
-	scanf("%i",&tnum);
-	switch (tnum)
-	{
-		case 1:task1();break;
-		case 2:task2();break;
-		case 3:task3();break;
-		case 4:task4();break;
-		case 5:task5();break;
-		case 6:task6();break;
-		case 7:task7();break;
-		case 8:task8();break;
-		case 9:task9();break;
-		case 10:task10();break;
-		case 11:task11();break;
-		case 12:task12();break;
-		case 13:task13();break;
-		case 14:task14();break;
-		case 15:task15();break;
-		case 16:task16();break;
-		case 17:task17();break;
-		case 18:task18();break;
-		// case 19:task19();break;
-		case 20:task20();break;
-		case 21:task21();break;
-		case 22:task22();break;
-		// case 23:task23();break;
-		// case 24:task24();break;
-		default:printf("This task not found");break;
-	}
+//	int tnum;
+//	printf("Task num = ");
+//	scanf("%i",&tnum);
+//	switch (tnum)
+//	{
+//		case 1:task1();break;
+//		case 2:task2();break;
+//		case 3:task3();break;
+//		case 4:task4();break;
+//		case 5:task5();break;
+//		case 6:task6();break;
+//		case 7:task7();break;
+//		case 8:task8();break;
+//		case 9:task9();break;
+//		case 10:task10();break;
+//		case 11:task11();break;
+//		case 12:task12();break;
+//		case 13:task13();break;
+//		case 14:task14();break;
+//		case 15:task15();break;
+//		case 16:task16();break;
+//		case 17:task17();break;
+//		case 18:task18();break;
+// 		case 19:task19();break;
+//		case 20:task20();break;
+//		case 21:task21();break;
+//		case 22:task22();break;
+//		case 23:task23();break;
+//		case 24:task24();break;
+//		default:printf("This task not found");break;
+//	}
 }
 
 task1(){
@@ -407,4 +407,32 @@ task22(){
 	printf("Sum = %i",sum);
 }
 
+task23(){
+	int i,n,fact=1;
+	printf("Number= ");
+	scanf("%i",&n);
+	for(i=1; i<=n; i++){
+		fact=fact*i;
+		printf("%i",fact);
+		if(i<n){
+			printf("+");
+		}
+//		sum=sum+fact;
+	}
+}
+	
 
+task24(){
+	int i,n,sum=0,fact=1;
+	printf("Number= ");
+	scanf("%i",&n);
+	for(i=1; i<=n; i++){
+		fact=fact*i;
+		printf("%i",fact);
+		if(i<n){
+			printf("+");
+		}
+		sum=sum+fact;
+	}
+	printf(" = %i",sum);
+}
