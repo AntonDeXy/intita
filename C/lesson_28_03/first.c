@@ -7,6 +7,16 @@ void task4();
 void task5a();
 void task5b();
 void task5c();
+void task6a();
+void task6b();
+void task7();
+void task8();
+void task9();
+void task10();
+void task11();
+void task12();
+void task13();
+void task14a();
 
 main(){
 	// task1();
@@ -15,7 +25,17 @@ main(){
 	// task4();
 	// task5a();
 	// task5b();
-	task5c();
+//								task5c();
+	//	task6a();
+//	task6b();
+//	task7();
+//	task8();
+//	task9();
+//	task10();
+//	task11();
+//	task12();
+//	task13();
+	task14a();
 }
 
 void task1(){
@@ -158,9 +178,229 @@ void task5c(){
 	}while(N>50);
 	printf("array numbers: ");
 	for(i=0; i<N; i++){
-		arr[i] = (rand() %210)* 0.1;
-		printf("%.0f \n", arr[i]);
-		// num = arr[i];
-		// printf("%d ",num);	
+		arr[i] = (rand() %21)* 0.1;
+		printf("\n%g ", arr[i]);
 	}
+	for(i=0; i<N; i++){
+		printf("\n %.0f", arr[i]);
+	}
+}
+
+void task6a(){
+	int arr[50];
+	int N, i,k = 0, sum = 0, temp;
+	srand(time(0));
+	
+	do{
+		printf("Numbers: ");
+		scanf("%i",&N);
+	}while(N>50);
+	printf("array numbers: ");
+	for(i=0; i<N; i++){
+		arr[i] = (rand() %21);
+		printf("%d ", arr[i]);
+	}
+	printf("\n parni: ");
+	for(i = 0; i<N; i++){
+//		temp = arr[i];
+		if(arr[i]%2 == 0){
+			printf("%d ", arr[i]);
+			k++;
+		}
+	}
+	printf("\n kilkist parnyh: %d",k);
+}
+
+void task6b(){
+	int arr[50];
+	int N, i,k = 0, sum = 0, temp;
+	srand(time(0));
+	
+	do{
+		printf("Numbers: ");
+		scanf("%i",&N);
+	}while(N>50);
+	printf("array numbers: ");
+	for(i=0; i<N; i++){
+		arr[i] = (rand() %21);
+		printf("%d ", arr[i]);
+	}
+	printf("\n neparni: ");
+	for(i = 0; i<N; i++){
+		if(arr[i]%2 != 0){
+			printf("%d ", arr[i]);
+			k++;
+		}
+	}
+	printf("\n kilkist ne parnyh: %d",k);
+}
+
+void task7(){
+	float arr[50];
+	int N, i, k = 0;
+
+	srand(time(0));
+
+	do{
+		printf("Numbers: ");
+		scanf("%d",&N);
+	}while(N>50);
+	printf("array numbers: ");
+	for(i=0; i<N; i++){
+		arr[i] = (rand() %21 - 10);
+		printf("%g ",arr[i]);	
+	}
+	for(i=0; i<N; i++){
+		if(arr[i]<0) k++;
+	}
+	printf("\nkilkist ne dodatnyh = %d",k);
+}
+
+void task8(){
+	int arr[50];
+	int N, i, k = 0;
+
+	srand(time(0));
+
+	do{
+		printf("Numbers: ");
+		scanf("%d",&N);
+	}while(N>50);
+	printf("array numbers: ");
+	for(i=0; i<N; i++){
+		arr[i] = (rand() %21 - 10);
+		printf("%d ",arr[i]);	
+	}
+	for(i=0; i<N; i++){
+		if(arr[i]>0 && arr[i]%2==0) k++;
+	}
+	printf("\nparni dodatni = %d",k);
+}
+
+
+void task9(){
+	int arr[50];
+	int N, i, k = 0;
+
+	srand(time(0));
+
+	do{
+		printf("Numbers: ");
+		scanf("%d",&N);
+	}while(N>50);
+	printf("array numbers: ");
+	for(i=0; i<N; i++){
+		arr[i] = (rand() %21 - 10);
+		printf("%d ",arr[i]);	
+	}
+	for(i=0; i<N; i++){
+		if(arr[i]<0 && arr[i]%2!=0) k++;
+	}
+	printf("\nparni dodatni = %d",k);
+}
+
+void task10(){
+	int arr[50];
+	int N, i, k = 0;
+
+	srand(time(0));
+
+	do{
+		printf("Numbers: ");
+		scanf("%d",&N);
+	}while(N>50);
+	printf("array numbers: ");
+	for(i=0; i<N; i++){
+		arr[i] = (rand() %21 - 10);
+		printf("%d ",arr[i]);	
+	}
+	for(i=0; i<N; i++){
+		if(arr[i]>0 && arr[i]%2!=0){
+			printf("y nabori e neparne dodatne chyslo");
+			return;
+		}
+	}
+	printf("y nabori ne mae neparnuh dodatnuh chysel");
+}
+
+void task11(){
+	int arr[50];
+	int N, i, k = 0;
+
+	srand(time(0));
+
+	do{
+		printf("Numbers: ");
+		scanf("%d",&N);
+	}while(N>50);
+	printf("array numbers: ");
+	for(i=0; i<N; i++){
+		arr[i] = (rand() %21 - 10);
+		printf("%d ",arr[i]);	
+	}
+	for(i=0; i<N; i++){
+		if(arr[i]<0 && arr[i]%2==0){
+			printf("y nabori e parne videmne chyslo");
+			return;
+		}
+	}
+	printf("y nabori ne mae parnuh videmnux chysel");
+}
+
+void task12(){
+	int arr[50];
+	int N, i, k = 0;
+
+	srand(time(0));
+
+	do{
+		printf("Numbers: ");
+		scanf("%d",&N);
+		printf("Max count: ");
+		scanf("%d",&k);}
+	while(N>50);
+	printf("array numbers: ");
+	for(i=0; i<N; i++){
+		arr[i] = (rand() %21 - 10);
+		printf("%d ",arr[i]);	
+	}
+	for(i=0; i<N; i++){
+		if(arr[i]<k){
+			printf("y nabori e chysla menshi %d", k);
+			return;
+		}
+	}
+	printf("y nabori ne mae chysla menshe %d", k);
+}
+
+void task13(){
+	int input, sum=0, i;
+	
+	do{
+		printf("Vvedit chyslo: ");
+		scanf("%d", &input);
+		sum=sum+input;
+	}while(input != 0);
+		printf("Syma vvedenyh chysel: %d",sum);
+}
+
+void task14a(){
+	int input, sum=0, i=0,arr[100],k,n,numbers=0;
+	
+	printf("max count: ");
+	scanf("%d",&k);
+	
+	do{
+		printf("Vvedit chyslo: ");
+		scanf("%d", &input);
+		arr[i]=input;
+		i++;
+	}while(input != 0);
+	
+	for(n=0; n<i; n++){
+		if(arr[n]<k){
+			numbers++;
+		}
+	}
+	printf("Chysel %d menshe %d",numbers ,k);
 }
