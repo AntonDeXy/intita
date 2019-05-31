@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+
 main()
 {
 	char word[30], words[100][30];
