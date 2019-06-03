@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  .active{
+    color: green !important;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  }
+</style>
+<body>
+  <div id="myDiv">
+    New Div
+  </div>
+  <div class="myClass"></div>
+  <div class="myClass"></div>
+  <div class="myClass"></div>
+  <div class="myClass"></div>
+  <a href="#" onclick="Click()">Click me</a>
+  <a href="#" onclick="Click()">Click me</a>
+  <a href="#" onclick="Click()">Click me</a>
+  <!-- <script src="./script.js"></script> -->
+  <script>
+    let links = document.getElementsByTagName('a')
+    function Click() {
+      for(let i = 0; i<links.length; i++){
+        links[i].classList.toggle('active')
+      }
+    }
+  </script>
+</body>
+</html>
