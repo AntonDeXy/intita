@@ -4,8 +4,8 @@ main()
 {
 	FILE *fp,*fp1,*fp2;
 	char num[20]={};
-	float sumFloat = 0,tempNum;
-	int n,i,point, j,sumInt = 0;
+	float sumFloat = 0,tempNum, floatToInt[20], sumFloatToInt=0;
+	int n,i, m=0,p=0,point, j,sumInt = 0;
 	
 	fp=fopen("input.txt","r");
 	fp1=fopen("int.txt","w");
@@ -31,8 +31,17 @@ main()
 		if(num[i]==0){
 			if(point==1){
 				fprintf(fp2,"%s ",num);
-				sscanf(num,"%f",&tempNum);
+				sscanf(num,"%f ",&tempNum);
+//				printf("\n---------- %.0f -------\n",tempNum);
+				while(m<20){
+					floatToInt[m] = tempNum;
+					printf("%f\n ",tempNum);
+					m++;
+					break;
+				}
+//				printf("%f ",floatToInt)
 				sumFloat=sumFloat+tempNum;
+//				printf("%i ",floatToInt);
 			}
 			else {
 				fprintf(fp1,"%s ",num);
@@ -40,14 +49,19 @@ main()
 				sumInt=sumInt+tempNum;
 			}
 		}
-	}
-		printf("%i", sumInt);
 		
-//		sumInt=0;
-	
+	}
 		fprintf(fp2,"\nSum = %g", sumFloat);
+		fprintf(fp2,"\nCili chysla:  ");
 		fprintf(fp1,"\nSum = %i", sumInt);
-	
+		for(p=0;p<20;p++){
+			fprintf(fp2,"%.0f ",floatToInt[p]);
+			sumFloatToInt=sumFloatToInt+floatToInt[p];
+			if(floatToInt[p] == 0.00000){
+				break;
+			}
+		}
+		fprintf(fp2,"sum floats to int = %.0f ",sumFloatToInt);
 		fclose(fp);
 		fclose(fp1);
 		fclose(fp2);
