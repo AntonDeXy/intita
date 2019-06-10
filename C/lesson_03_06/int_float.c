@@ -35,7 +35,7 @@ main()
 //				printf("\n---------- %.0f -------\n",tempNum);
 				while(m<20){
 					floatToInt[m] = tempNum;
-					printf("%f\n ",tempNum);
+//					printf("%g\n ",tempNum);
 					m++;
 					break;
 				}
@@ -55,13 +55,13 @@ main()
 		fprintf(fp2,"\nCili chysla:  ");
 		fprintf(fp1,"\nSum = %i", sumInt);
 		for(p=0;p<20;p++){
-			fprintf(fp2,"%.0f ",floatToInt[p]);
-			sumFloatToInt=sumFloatToInt+floatToInt[p];
-			if(floatToInt[p] == 0.00000){
+			if(floatToInt[p] == 0){
 				break;
 			}
+			fprintf(fp2,"%.0f ",floatToInt[p]);
+			sumFloatToInt=sumFloatToInt+floatToInt[p];
 		}
-		fprintf(fp2,"sum floats to int = %.0f ",sumFloatToInt);
+		fprintf(fp2,"\nSum floatsToInt = %0.f ",sumFloatToInt);
 		fclose(fp);
 		fclose(fp1);
 		fclose(fp2);
