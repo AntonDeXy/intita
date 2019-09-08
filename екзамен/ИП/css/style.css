@@ -1,0 +1,158 @@
+@media (max-width: 600px){
+  .cards{
+    flex-direction: column !important;
+  }
+  .cards .card{
+    padding: 10px 0 !important;
+  }
+  .sqGroupOther{
+    display: none !important;
+  }
+  .squares{
+    flex-direction: column !important;
+  }
+  .sqGroup{
+    width: 100% !important;
+  }
+  .forms div{
+    flex-direction: column;    
+    justify-content: center !important;
+  }
+  .row1{
+    border: none !important;
+  }
+  .forms input{
+    margin: auto !important;
+    margin-bottom: 10px !important;
+    border: none !important;
+    width: 90% !important;
+  }
+  .more{
+    display: block !important;
+    text-align: center;
+    color: blue;
+    text-decoration: underline dotted;
+    margin-bottom: 10px;
+  }
+}
+
+*{
+  font-family: 'Roboto', sans-serif;  
+}
+
+h2, h3{
+  margin: 0;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: rgb(226, 226, 226);
+}
+
+.cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.card-img{
+  display: flex;
+  background-color: grey;
+  height: 240px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-body{
+  display: flex;  
+  /* width: 100%; */
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+.card-body h2{
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.card{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.squares{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.sqGroup{
+  /* display: flex;
+  flex-direction: column; */
+
+  /* padding: 10px; */
+  width: calc(100% / 3 - 40px);
+  /* padding: 20px; */
+  display: flex;
+  flex-direction: column;
+}
+
+.firstSq,.secondSq{
+  display: flex;
+  flex-direction: row;
+}
+
+.square{
+  margin: 5px;
+  background-color: grey;
+  width: calc(100% - 20px);
+  height: 100px;
+}
+
+.forms{
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+  /* padding: 20px; */
+  width: calc(100% - 40px);
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-radius: 7px;
+}
+
+.forms div{
+  display: flex;
+  justify-content: space-around;
+  width: 98%;
+  margin: auto;
+}
+
+.forms input{
+  width: 30%;
+  margin: 10px 0;
+  height: 25px;
+}
+
+.row1{
+  border-top: 2px solid darkgrey;
+}
+
+.row2 input{
+  border: none;
+  display: block;
+  border-bottom: 2px solid black;
+}
+
+.more{
+  display: none;
+}
+
+.displayBoxes{
+  display: flex !important;
+}

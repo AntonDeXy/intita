@@ -1,0 +1,4 @@
+0.7 2.0 2.0 3.0 82.0 
+Sum = 91.7
+Cili chysla:  0 2 2 3 82 
+Sum floatsToInt = 89 

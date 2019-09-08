@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="cards">
+    <div class="card">
+      <div class="card-img">
+        
+      </div>
+      <div class="card-body">
+        <h2>Lorem ipsum dolor sit</h2>
+        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum amet porro dolore.</h3>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        
+      </div>
+      <div class="card-body">
+        <h2>Lorem ipsum dolor sit</h2>
+        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum amet porro dolore.</h3>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+        
+      </div>
+      <div class="card-body">
+        <h2>Lorem ipsum dolor sit</h2>
+        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum amet porro dolore.</h3>
+      </div>
+    </div>
+  </div>
+  <div class="squares">
+    <div class="sqGroup">
+      <div class="firstSq">
+          <div class="square"></div>
+          <div class="square"></div>
+      </div>
+      <div class="secondSq">
+          <div class="square"></div>
+          <div class="square"></div>
+      </div>
+    </div>
+    <h3 class="more" onclick="hide()">
+      More
+    </h3>
+    <div class="sqGroup sqGroupOther">
+      <div class="firstSq">
+          <div class="square"></div>
+          <div class="square"></div>
+      </div>
+      <div class="secondSq">
+          <div class="square"></div>
+          <div class="square"></div>
+      </div>
+    </div>
+    <div class="sqGroup sqGroupOther">
+      <div class="firstSq">
+          <div class="square"></div>
+          <div class="square"></div>
+      </div>
+      <div class="secondSq">
+          <div class="square"></div>
+          <div class="square"></div>
+      </div>
+    </div>
+  </div>
+  <div class="forms">
+    <div class="row1">
+      <input type="text">
+      <input type="text">
+      <input type="text">
+    </div>
+    <div class="row2">
+      <input type="text">
+      <input type="text">
+      <input type="text">
+    </div>
+    <div class="row3">
+      <input type="text">
+      <input type="text">
+      <input type="text">
+    </div>  
+  </div>
+  <script>
+
+    function hide(e) {
+      const boxes = document.querySelectorAll('.sqGroupOther');
+        for(i = 0; i <= boxes.length; i++){
+          boxes[i].classList.toggle("displayBoxes")
+        }
+    }
+  </script>
+</body>
+</html>

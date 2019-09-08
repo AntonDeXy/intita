@@ -1,0 +1,77 @@
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+.traficLight {
+  background-color: grey;
+  display: flex;
+  width: 200px;
+  height: 500px;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+#redSpan {
+  color: green;
+}
+
+#greenSpan {
+  color: red;
+}
+
+.red, .green {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background-color: darkgray;
+  font-size: 45px;
+  color: white;
+  display: flex;
+  justify-content:  center;
+  align-items: center;
+}
+
+.redActive{
+  background-color: red;
+}
+
+.greenActive {
+  background-color: green;
+}
+
+.human{
+  right: calc(100% - 100px);
+  position: absolute;
+  bottom: 0;
+  height: 250px;
+}
+
+.car{
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 250px;
+}
+
+.carTransitionFromTop {
+  top: 100%;
+  -webkit-transition: top 4.5s ease-out 0.2s;
+  -moz-transition: top 4.5s ease-out 0.2s;
+  -o-transition: top 4.5s ease-out 0.2s;
+  transition: top 4.5s ease-out 0.2s;
+}
+
+.imgTransitionFromLeft {
+  right: -100px;
+  -webkit-transition: right 4.5s ease-out 0.2s;
+  -moz-transition: right 4.5s ease-out 0.2s;
+  -o-transition: right 4.5s ease-out 0.2s;
+  transition: right 4.5s ease-out 0.2s;
+}
+
